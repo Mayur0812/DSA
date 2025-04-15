@@ -1,0 +1,14 @@
+def subArray(s,k):
+    l=r=0
+    curr = 0
+    ans = 0
+    for r in range(0,len(s)):
+        curr+=s[r]
+        while(curr>k):
+            curr-=s[l]
+            l+=1
+        ans = max(ans, r-l+1)
+    return ans
+        
+out = subArray([3, 1, 2, 7, 4, 2, 1, 1, 5],8)
+print(out)
