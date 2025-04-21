@@ -24,7 +24,7 @@ def sum_tree(root):
 
 if __name__ == '__main__':
     root = Node(26)
-    root.left = Node(10)
+    root.left = Node(20)
     root.right = Node(6)
     if(sum_tree(root)):
         print("Balanced")
